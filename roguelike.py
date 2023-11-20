@@ -1,7 +1,6 @@
 
 # Importer le module random pour générer de l'aléatoire
 import random
-import colored
 
 
 # Définir les caractéristiques du joueur
