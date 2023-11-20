@@ -220,5 +220,4 @@ def show_stats():
     print(f"- Défense : {player['def']}")
 
 # Appeler la fonction main_menu pour lancer le jeu
-main_menu()
-        
+main_menu()        
