@@ -1,12 +1,14 @@
 
 # Importer le module random pour générer de l'aléatoire
 import random
+import colored
+
 
 # Définir les caractéristiques du joueur
 player = {
     "name": "Cédric",
-    "hp": 100, 
-    "atk": 10, 
+    "hp": 1000, 
+    "atk": 100, 
     "def": 5, 
     "inv": [] 
 }
@@ -51,7 +53,7 @@ items = [
 
 # Définir une fonction pour afficher le menu principal
 def main_menu():
-    print("Bienvenue dans le jeu rogue like !")
+    print("Bienvenue dans le jeu Rogue MAALSI !")
     print("1. Commencer une nouvelle partie")
     print("2. Quitter le jeu")
     choice = input("Que voulez-vous faire ? ")
@@ -184,7 +186,7 @@ def use_item():
 def flee(monster):
     global player 
     chance = random.randint(1, 10)
-    if chance <= 5: 
+    if chance <= 3: 
         print(f"Vous parvenez à fuir le {monster['name']} !")
     else: 
         print(f"Vous ne parvenez pas à fuir le {monster['name']} ")
